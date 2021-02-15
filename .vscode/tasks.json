@@ -1,0 +1,19 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "build",
+			"group": "build",
+			"problemMatcher": [],
+			"label": "npm: build",
+			"detail": "ng build"
+		},
+		{
+			"label": "build-all",
+			"type": "shell",
+			"command": "powershell -file ${cwd}/powershell-scripts/build-all.ps1",
+			"problemMatcher": []
+		 },
+	]
+}

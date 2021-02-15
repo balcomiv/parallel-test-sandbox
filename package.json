@@ -7,7 +7,19 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "example": "ng test --watch false --browsers ChromeHeadless --include **/*.peer-review.spec.ts",
+    "test:pr": "ng test --watch false --browsers ChromeHeadless",
+    "cover:lib:tools": "ng test tools --watch false",
+    "cover:lib:vendors": "ng test vendors --watch false",
+    "cover:app:admin": "ng test administration --watch false",
+    "cover:app:gatling": "ng test gatling --watch false",
+    "cover": "run-p cover:**",
+    "testing:lib:tools:peer-review": "ng test tools --watch false --browsers ChromeHeadless",
+    "testing:lib:vendors:peer-review": "ng test vendors --watch false --browsers ChromeHeadless",
+    "testing:app:admin:peer-review": "ng test administration --watch false --browsers ChromeHeadless",
+    "testing:app:gatling:peer-review": "ng test gatling --watch false --browsers ChromeHeadless",
+    "pr": "run-p testing:**:peer-review"
   },
   "private": true,
   "dependencies": {
@@ -19,6 +31,7 @@
     "@angular/platform-browser": "~11.0.9",
     "@angular/platform-browser-dynamic": "~11.0.9",
     "@angular/router": "~11.0.9",
+    "npm-run-all": "^4.1.5",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"
