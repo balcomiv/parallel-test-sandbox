@@ -15,5 +15,17 @@
 			"command": "powershell -file ${cwd}/powershell-scripts/build-all.ps1",
 			"problemMatcher": []
 		 },
+		 {
+			"label": "test-pr",
+			"type": "shell",
+			"command": "powershell -file ${cwd}/powershell-scripts/test-pr.ps1",
+			"problemMatcher": []
+		 },
+		 {
+			"label": "test-pr-parallel",
+			"type": "shell",
+			"command": "powershell -file ${cwd}/powershell-scripts/test-pr-parallel.ps1",
+			"problemMatcher": []
+		 },
 	]
 }

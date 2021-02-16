@@ -203,6 +203,7 @@ import { ILkFwComponent } from './test-components/ilk-fw/ilk-fw.component';
 import { FuGpWComponent } from './test-components/fu-gp-w/fu-gp-w.component';
 import { MJKtUComponent } from './test-components/mjkt-u/mjkt-u.component';
 import { VwNmSComponent } from './test-components/vw-nm-s/vw-nm-s.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -410,7 +411,8 @@ import { VwNmSComponent } from './test-components/vw-nm-s/vw-nm-s.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
