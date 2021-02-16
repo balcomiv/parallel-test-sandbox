@@ -11,9 +11,7 @@ function makeId(length: number): string {
 
 const results = [];
 for (let i = 0; i < 200; i++) {
-  results.push(
-    `ng g c test-components/${makeId(5)} --project vendors --dry-run`
-  );
+  results.push(`ng g c test-components/${makeId(5)} --project vendors`);
 }
 
 const cmd = results.join('\n');
