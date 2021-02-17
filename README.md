@@ -6,6 +6,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 - [OctoPerf Multi App Workspace](https://octoperf.com/blog/2019/08/22/kraken-angular-workspace-multi-application-project/#create-an-application)
 
+- `ng new kraken --createApplication=false --directory=frontend --interactive=false`
+
 ## Create Applications
 
 `ng generate application administration --style=scss --routing=true`
